@@ -2,6 +2,10 @@ package common;
 
 public enum GameNames {
 
+    /*
+    * Here maintain game categories of the side panel
+    * */
+
     HARRY_BOY("harry-boy"),
     V75("v75"),
     V86("v86"),

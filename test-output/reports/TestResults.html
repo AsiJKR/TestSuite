@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Extent</title>
+<title>Test Report</title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
@@ -32,10 +32,10 @@
 </ul>
 <ul class="nav-right">
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+<a href="#"><span class="badge badge-primary">ATG Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 9, 2021 02:01:00 AM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 9, 2021 12:27:26 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">V4 Horse journey</p>
             <p class="text-sm">
-              <span>2:01:15 AM</span> / <span>00:00:22:999</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:27:28 PM</span> / <span>00:00:16:270</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">V4 Horse journey</h5>
-<span class='badge badge-success'>11.09.2021 2:01:15 AM</span>
-<span class='badge badge-danger'>11.09.2021 2:01:38 AM</span>
-<span class='badge badge-default'>00:00:22:999</span>
+<h5 class="test-status text-pass">V4 Horse journey</h5>
+<span class='badge badge-success'>11.09.2021 12:27:28 PM</span>
+<span class='badge badge-danger'>11.09.2021 12:27:44 PM</span>
+<span class='badge badge-default'>00:00:16:270</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -109,13 +104,10 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Guest user plays V4 game</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Guest user plays V4 game</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="steps.ATGHomePageFunctions.asAUserTheyNavigateToATGHomeDdd()">
                 <span>Given As a User they navigate to ATG Home ddd</span>
@@ -137,84 +129,43 @@
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="steps.ATGHomePageFunctions.selectGameFromAllGames(java.lang.String)">
-                <span>And On side panel user clicks "V2343" as the game</span>
+              <div class="step pass-bg" title="steps.ATGHomePageFunctions.selectGameFromAllGames(java.lang.String)">
+                <span>And On side panel user clicks "V4" as the game</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='V2343']"}
-  (Session info: chrome=95.0.4638.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'Asithas-MBP', ip: 'fe80:0:0:0:43c:db7a:8e54:a9d3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [78b27fa71f405c16e95585f7886676d8, findElement {using=xpath, value=//*[text()='V2343']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/z7/yt9gtz9x5cv...}, goog:chromeOptions: {debuggerAddress: localhost:57520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57520/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 78b27fa71f405c16e95585f7886676d8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at pages.ATGHomePage.selectGameFromAllGames(ATGHomePage.java:46)
-	at steps.ATGHomePageFunctions.selectGameFromAllGames(ATGHomePageFunctions.java:34)
-	at ✽.On side panel user clicks "V2343" as the game(file:///Users/asithawijekoon/Documents/gitprojects/gql/TestSuite_ATG/src/test/resources/features/ATGHomePage.feature:8)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="steps.V4PageFunctions.clickCouponButton()">
+              <div class="step pass-bg" title="steps.V4PageFunctions.clickCouponButton()">
                 <span>And On V4 game page user clicks on coupon button</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="steps.V4PageFunctions.clickCreateNewCouponButton()">
+              <div class="step pass-bg" title="steps.V4PageFunctions.clickCreateNewCouponButton()">
                 <span>And On coupon popup user clicks New coupon</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="steps.V4PageFunctions.selectDesiredHorse(int,int)">
+              <div class="step pass-bg" title="steps.V4PageFunctions.selectDesiredHorse(int,int)">
                 <span>And On game page user selects "1" as horse leg and "4" as horse count</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="steps.V4PageFunctions.selectDesiredHorse(int,int)">
+              <div class="step pass-bg" title="steps.V4PageFunctions.selectDesiredHorse(int,int)">
                 <span>And On game page user selects "2" as horse leg and "1" as horse count</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="steps.V4PageFunctions.selectDesiredHorse(int,int)">
+              <div class="step pass-bg" title="steps.V4PageFunctions.selectDesiredHorse(int,int)">
                 <span>And On game page user selects "3" as horse leg and "2" as horse count</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="steps.V4PageFunctions.selectAllHorses(int)">
+              <div class="step pass-bg" title="steps.V4PageFunctions.selectAllHorses(int)">
                 <span>And On game page user clicks All button for "4" horse leg</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="steps.V4PageFunctions.verifyIfAmountIsIncreased()">
+              <div class="step pass-bg" title="steps.V4PageFunctions.verifyIfAmountIsIncreased()">
                 <span>Then On game page user verifies if the total amount is changed</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>runner.TestRunner.after(io.cucumber.java.Scenario)</span>
-      <div>scree
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../../screenshot/embedded1.png' src="../../screenshot/embedded1.png">
-    
-    </div></div>
-</div>
       <div>
       </div>
               </div>
@@ -233,82 +184,30 @@ Session ID: 78b27fa71f405c16e95585f7886676d8
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>02:01:37 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>And On side panel user clicks "V2343" as the game</a>
-<div class="">
-<span class="badge badge-default">V4 Horse journey.Guest user plays V4 game.And On side panel user clicks "V2343" as the game</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
+<div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 9, 2021 02:01:00 AM</h3>
+<h3>Nov 9, 2021 12:27:26 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 9, 2021 02:01:38 AM</h3>
+<h3>Nov 9, 2021 12:27:44 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -324,12 +223,12 @@ Session ID: 78b27fa71f405c16e95585f7886676d8
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -347,9 +246,9 @@ Session ID: 78b27fa71f405c16e95585f7886676d8
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -367,10 +266,10 @@ Session ID: 78b27fa71f405c16e95585f7886676d8
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='38%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>12</b> steps passed</small></div>
 <div>
-<small data-tooltip='7%'><b>1</b> steps failed,
-<b>7</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -386,7 +285,7 @@ Session ID: 78b27fa71f405c16e95585f7886676d8
 </div></div>
 <script>
 var timeline = {
-"V4 Horse journey":22.999
+"V4 Horse journey":16.27
 };
 </script>
 <div class="row">
@@ -395,21 +294,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 1,
+passChild: 1,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
-failGrandChild: 1,
+passGrandChild: 12,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 7,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };

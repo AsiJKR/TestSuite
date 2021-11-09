@@ -31,7 +31,8 @@ public class DriverHandler {
                 case "Chrome":
 
                     ChromeOptions options = new ChromeOptions();
-                    options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+                    options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});//remove automation message
+                    options.addArguments("incognito");//starting as incognito
 
                     WebDriverManager.chromedriver().setup();
                     driver.set(new ChromeDriver(options));

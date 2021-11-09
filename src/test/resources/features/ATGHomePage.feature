@@ -5,7 +5,7 @@ Feature: V4 Horse journey
     And On Home Page user clicks on Horses Category
     And On Home Page user clicks side menu panel
     And On side panel user clicks All games dropdown
-    And On side panel user clicks "V2343" as the game
+    And On side panel user clicks "V4" as the game
     And On V4 game page user clicks on coupon button
     And On coupon popup user clicks New coupon
     And On game page user selects "1" as horse leg and "4" as horse count

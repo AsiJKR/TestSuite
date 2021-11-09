@@ -13,8 +13,8 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
         features = {"src/test/resources/features/ATGHomePage.feature"},
-        glue = {"steps","runner"},
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","summary"},
+        glue = {"steps", "runner"},
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "summary"},
         publish = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
@@ -40,6 +40,6 @@ public class TestRunner extends AbstractTestNGCucumberTests {
             // embed it in the report
             scenario.attach(screenshot, "image/png", "failure screenshot");
         }
-        driverHandler.tearDown();
+        driverHandler.tearDown();//quite driver
     }
 }
