@@ -6,7 +6,7 @@ The aim of the testing framework is to provide a good way to write and run unit 
 
 This framework is created for both BDD & TDD test execution purpose using Java 12 , Selenium 4, Cucumber 7, maven and testNG.
 
-For driver handling I used `io.github.bonigarcia.webdrivermanager` which finds the relevant driver as per your installed browser & version and store in cache.
+For driver handling I used `io.github.bonigarcia.webdrivermanager` which finds the relevant driver as per your installed browser & version (stores in cache).
 
 For extent reports with cucumber + testNG, I used `extentreports-cucumber7-adapter` which lets you configure report with many customizations.
 
@@ -54,6 +54,24 @@ Brief description of classes/directory and their purposes.
 4. test-output directory
    > Will have extent report of the test run. Any failure and this will store the screenshot.
 
+### Test Scenario
+1. Go to URL
+2. Select Häst
+3. Select V4
+4. Make a coupon
+5. Mark 4 horses on v4:1, Mark 1 horse on v4:2 Mark 2 horses on v4:3, Mark all horses on v4:4
+6. Make sure that this test can run everyday
 
+Her I have added an `assertion` to check the total amount after and before selecting horses.
+
+The above scenario is covered in BDD and will have the option to run in Jenkins or Selenium Grid using run.sh. 
+
+The schedulers can be added in jenkins like this `10 06 * * *`.
+Our suite will run every day in every month in every year at 10th minute of 6th hour (0610h).
+
+After adding more scenarios we can use TestRunner to configure parallel run using ThreadLocal driver.
+
+
+Thank you!
 
 
