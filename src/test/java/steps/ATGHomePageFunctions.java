@@ -11,7 +11,7 @@ public class ATGHomePageFunctions {
 
     @Given("^As a User they navigate to ATG Home Page$")
     public void navigateTo(){
-        homePage.navigateTo(Constants.url);
+        homePage.navigateTo(Constants.URL);
     }
 
     @And("^On Home Page user clicks on Horses Category$")
@@ -36,6 +36,6 @@ public class ATGHomePageFunctions {
 
     @Given("As a User they navigate to ATG Home ddd")
     public void asAUserTheyNavigateToATGHomeDdd() {
-        homePage.navigateTo(Constants.url);
+        homePage.navigateTo(Constants.URL);
     }
 }

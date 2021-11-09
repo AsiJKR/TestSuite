@@ -16,12 +16,12 @@ public class BaseFunctions {
     }
 
     public static void waitForElementToBeVisible(By by, WebDriver driver) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.explicit_wait_time));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.EXPLICIT_WAIT_TIME));
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
     public static void waitForElementToBeClickable(By by, WebDriver driver) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.explicit_wait_time));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.EXPLICIT_WAIT_TIME));
         wait.until(ExpectedConditions.elementToBeClickable(by));
     }
 
