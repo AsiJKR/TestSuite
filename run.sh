@@ -1,3 +1,3 @@
 #!/bin/sh
 #This will run tests directly using the pom
-mvn test
+mvn test -Dhost=$1

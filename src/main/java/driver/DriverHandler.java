@@ -15,7 +15,7 @@ public class DriverHandler {
 
     protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 
-    protected static String host = "localhost"; //change this to your server for remote execution
+    protected static String host = System.getProperty("host", "localhost"); //change this to your server for remote execution
     protected static String browser = System.getProperty("Browser", "Chrome");
 
     public DriverHandler() {
