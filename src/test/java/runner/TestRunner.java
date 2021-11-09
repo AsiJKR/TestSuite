@@ -22,7 +22,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     public DriverHandler driverHandler = new DriverHandler();
 
     @Override
-    @DataProvider(parallel = true)
+    @DataProvider()
     public Object[][] scenarios() {
         return super.scenarios();
     }
