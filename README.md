@@ -28,6 +28,8 @@ If you prefer triggering the suite from the IDE you can use`mvn clean install -D
 
 ### Explanation
 
+Used SonalLint for code review. Enum for data handling.
+
 Brief description of classes/directory and their purposes.
 
 1. DriverHandler.java
@@ -53,6 +55,7 @@ Brief description of classes/directory and their purposes.
 
 4. test-output directory
    > Will have extent report of the test run. Any failure and will store the screenshot.
+
 
 ### Test Scenario
 1. Go to URL
