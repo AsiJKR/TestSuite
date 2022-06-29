@@ -3,13 +3,13 @@ package steps;
 import common.Constants;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import pages.ATGHomePage;
+import pages.HomePage;
 
-public class ATGHomePageFunctions {
+public class HomePageFunctions {
 
-    ATGHomePage homePage = new ATGHomePage();
+    HomePage homePage = new HomePage();
 
-    @Given("^As a User they navigate to ATG Home Page$")
+    @Given("^As a User they navigate to Home Page$")
     public void navigateTo() {
         homePage.navigateTo(Constants.URL);
     }
@@ -34,8 +34,8 @@ public class ATGHomePageFunctions {
         homePage.selectGameFromAllGames(gameName);
     }
 
-    @Given("As a User they navigate to ATG Home ddd")
-    public void asAUserTheyNavigateToATGHomeDdd() {
+    @Given("As a User they navigate to Home ddd")
+    public void asAUserTheyNavigateToHomeDdd() {
         homePage.navigateTo(Constants.URL);
     }
 }

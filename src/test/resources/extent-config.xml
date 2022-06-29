@@ -20,7 +20,7 @@
         <documentTitle>Test Report</documentTitle>
         <!-- report name - displayed at top-nav -->
 
-        <reportName>ATG Test Report</reportName>
+        <reportName>Test Report</reportName>
         <!-- location of charts in the test view -->
 
         <!-- top, bottom -->

@@ -12,7 +12,7 @@ import org.testng.annotations.DataProvider;
 
 
 @CucumberOptions(
-        features = {"src/test/resources/features/ATGHomePage.feature"},
+        features = {"src/test/resources/features/HomePage.feature"},
         glue = {"steps", "runner"},
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "summary"},
         publish = true

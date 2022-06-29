@@ -1,7 +1,7 @@
 Feature: V4 Horse journey
 
   Scenario: Guest user plays V4 game
-    Given As a User they navigate to ATG Home ddd
+    Given As a User they navigate to Home ddd
     And On Home Page user clicks on Horses Category
     And On Home Page user clicks side menu panel
     And On side panel user clicks All games dropdown
@@ -15,7 +15,7 @@ Feature: V4 Horse journey
     Then On game page user verifies if the total amount is changed
 
   Scenario: Guest user plays V4 game failure
-    Given As a User they navigate to ATG Home ddd
+    Given As a User they navigate to Home ddd
     And On Home Page user clicks on Horses Category
     And On Home Page user clicks side menu panel
     And On side panel user clicks All games dropdown
