@@ -1,6 +1,6 @@
-# TestSuite_ATG
+# TestSuite *
 
-The testing framework aims to provide a good way to write and run unit and functional tests for the ATG web application.
+The testing framework aims to provide a good way to write and run unit and functional tests for the * web application.
 
 ## ⚙️ How does this work?
 
@@ -40,30 +40,28 @@ Brief description of classes/directory and their purposes.
     > Contains `global functions` used for steps. If it can be generalized you can add the method here.   
 
 
-3. ATGHomePage.feature
+3. HomePage.feature
     > BDD tests are written using Gherkin in simple English. Every step is mapped to java methods which are bound with cucumber annotations.
     
-
+    
 4. TestRunner.java
     > Cucumber execution is handled here. Used TestNG instead of JUnit because of the variety of options such as parallel and dependency testing. We can enable parallel run with a `thread count` here itself.
 
-4. steps directory
+
+5. steps directory
    > Contains page-specific functions which are mapped to feature file as above mentioned. We should always follow the `Page object model` when writing a new scenario.
 
-4. pages directory
+
+6. pages directory
    > Contains page-specific operations and locators. I have tried to use XPaths as much as possible because of the speed in execution and readability. We can use global functions to reduce duplicate codes.
 
-4. test-output directory
+
+7. test-output directory
    > Will have extent report of the test run. Any failure and will store the screenshot.
 
 
 ### Test Scenario
-1. Go to URL
-2. Select Häst
-3. Select V4
-4. Make a coupon
-5. Mark 4 horses on v4:1, Mark 1 horse on v4:2 Mark 2 horses on v4:3, Mark all horses on v4:4
-6. Make sure that this test can run every day
+--removed--
 
 Here I have added an `assertion` to check the total amount after and before selecting horses.
 
