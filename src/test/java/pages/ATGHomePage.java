@@ -8,7 +8,7 @@ import java.util.Locale;
 
 import static steps.BaseFunctions.*;
 
-public class HomePage extends DriverHandler {
+public class ATGHomePage extends DriverHandler {
 
     private final WebDriver driver = getDriver();
 
